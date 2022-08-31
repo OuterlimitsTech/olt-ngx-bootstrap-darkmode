@@ -1,13 +1,13 @@
 {
   "name": "olt-ngx-bootstrap-darkmode",
-  "version": "0.0.0",
+  "version": "14.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build ngx-bootstrap-darkmode",
-    "watch": "ng build ngx-bootstrap-darkmode --watch --configuration development",
+    "test-app": "ng serve test-app",
+    "build-lib": "ng build ngx-bootstrap-darkmode --configuration production",
+    "watch-lib": "ng build ngx-bootstrap-darkmode --watch --configuration development",
     "test": "ng test",
-    "postbuild": "xcopy \"README.md\" \".\\dist\\ngx-bootstrap-darkmode\" \/Y"
+    "postbuild": "xcopy \"README.md\" \".\\dist\\ngx-bootstrap-darkmode\" /Y"
   },
   "private": true,
   "dependencies": {
@@ -19,6 +19,8 @@
     "@angular/platform-browser": "^14.0.0",
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/router": "^14.0.0",
+    "bootstrap": "^5.2.0",
+    "bootstrap-darkmode": "^5.0.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

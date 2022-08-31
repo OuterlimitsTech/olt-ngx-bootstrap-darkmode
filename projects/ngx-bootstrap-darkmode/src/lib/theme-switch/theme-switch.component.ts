@@ -4,6 +4,17 @@ import { Subject } from 'rxjs';
 
 import { ThemeService } from '../theme.service';
 
+export enum Sizes {
+  sm = 'sm',
+  md = 'md',
+  lg = 'lg'
+}
+
+export enum Styles {
+  icon = 'icon',
+  label = 'label'
+}
+
 /**
  * A tri-state toggle button for switching between `light`, `auto` and `dark` theme.
  * Size and style (icon vs label) are configurable.
@@ -22,9 +33,9 @@ export class ThemeSwitchComponent implements OnInit {
    * - `sm` and `lg` translate to Bootstrap's `.btn-sm` and `.btn-lg`, respectively.
    * - `md` is the default and translates to just `.btn`.
    *
-   * @see https://getbootstrap.com/docs/4.5/components/buttons/#sizes
+   * @see https://getbootstrap.com/docs/5.2/components/buttons/#sizes
    */
-  @Input() size?: 'sm' | 'md' | 'lg';
+  @Input() size: Sizes | string | null | undefined = Sizes.md;
 
   /**
    * The style of the button labels.
@@ -37,7 +48,7 @@ export class ThemeSwitchComponent implements OnInit {
    * @see https://primer.style/octicons/telescope-16
    * @see https://primer.style/octicons/moon-16
    */
-  @Input() style?: 'icon' | 'label';
+  @Input() style: Styles | string | null | undefined = null;
 
   constructor(
     private themeService: ThemeService,
