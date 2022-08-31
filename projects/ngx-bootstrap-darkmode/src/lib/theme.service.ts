@@ -1,8 +1,8 @@
-import {Inject, Injectable, InjectionToken} from '@angular/core';
-import {DOCUMENT} from '@angular/common';
+import { Inject, Injectable, InjectionToken } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 
-import {BehaviorSubject, fromEvent, Observable, of, Subject} from 'rxjs';
-import {filter, map, startWith} from 'rxjs/operators';
+import { BehaviorSubject, fromEvent, Observable, of, Subject } from 'rxjs';
+import { filter, map, startWith } from 'rxjs/operators';
 
 export type DetectedTheme = 'dark' | 'light';
 
