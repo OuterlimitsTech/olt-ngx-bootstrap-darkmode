@@ -1,0 +1,44 @@
+<div class="container">
+  <h1>NgBootstrapDarkmode Test Page</h1>
+
+  <p>
+    Detected Theme: <code>{{themeService.detectedTheme$ | async}}</code>
+  </p>
+  <p>
+    Selected Theme: <code>{{themeService.theme$ | async}}</code>
+  </p>
+
+  <h2>Darkmode Switch</h2>
+  <!-- <olt-ngx-bootstrap-darkmode-switch></olt-ngx-bootstrap-darkmode-switch> -->
+
+  <h2>Theme Switch</h2>
+  <table class="table table-bordered">
+    <tr>
+      <th>Size</th>
+      <th>Result</th>
+      <th></th>
+    </tr>
+    <tr *ngFor="let size of sizes">
+      <td>{{size || '(undefined) or (null)'}}</td>
+      <td>
+        <olt-ngbd-theme-switch [size]="size2"></olt-ngbd-theme-switch>
+      </td>
+      <td>
+        <olt-ngbd-theme-switch [size]="size"></olt-ngbd-theme-switch>
+      </td>
+    </tr>
+  </table>
+
+  <table class="table table-bordered">
+    <tr>
+      <th>Style</th>
+      <th>Result</th>
+    </tr>
+    <tr *ngFor="let style of [undefined, 'icon', 'label']">
+      <th>{{style || '(undefined)'}}</th>
+      <th>
+        <olt-ngbd-theme-switch [style]="style"></olt-ngbd-theme-switch>
+      </th>
+    </tr>
+  </table>
+</div>

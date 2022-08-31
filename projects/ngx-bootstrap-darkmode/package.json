@@ -1,0 +1,26 @@
+{
+  "name": "@outerlimitstech/ngx-bootstrap-darkmode",
+  "version": "14.0.0",
+  "description": "Angular wrapper for bootstrap-darkmode",
+  "bugs": "https://github.com/OuterlimitsTech/olt-ngx-bootstrap-darkmode/issues",
+  "homepage": "https://github.com/OuterlimitsTech/olt-ngx-bootstrap-darkmode#readme",
+  "repository": "https://github.com/OuterlimitsTech/olt-ngx-bootstrap-darkmode.git",
+  "license": "MIT",
+  "author": "Chris Straw",
+  "keywords": [
+    "angular",
+    "switch",
+    "darkmode",
+    "lightmode",
+    "bootstrap 4",
+    "bootstrap 5"
+  ],
+  "peerDependencies": {
+    "@angular/common": ">=14.0.0 <15.0.0",
+    "@angular/core": ">=14.0.0 <15.0.0",
+    "@angular/forms": ">=14.0.0 <15.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}
