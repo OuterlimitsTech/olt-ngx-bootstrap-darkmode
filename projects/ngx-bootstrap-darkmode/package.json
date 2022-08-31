@@ -1,7 +1,18 @@
 {
   "name": "@outerlimitstech/ngx-bootstrap-darkmode",
+  "version": "14.0.0-beta.2",
   "description": "Angular wrapper for bootstrap-darkmode",
-  "version": "14.0.0-beta.1",
+  "bugs": "https://github.com/OuterlimitsTech/olt-ngx-bootstrap-darkmode/issues",
+  "homepage": "https://github.com/OuterlimitsTech/olt-ngx-bootstrap-darkmode#readme",
+  "repository": "https://github.com/OuterlimitsTech/olt-ngx-bootstrap-darkmode.git",
+  "license": "MIT",
+  "author": "Chris Straw",
+  "keywords": [
+    "angular",
+    "angular",
+    "bootstrap 4 darkmode",
+    "bootstrap 5 darkmode"
+  ],
   "peerDependencies": {
     "@angular/common": ">=14.0.0 <15.0.0",
     "@angular/core": ">=14.0.0 <15.0.0",
