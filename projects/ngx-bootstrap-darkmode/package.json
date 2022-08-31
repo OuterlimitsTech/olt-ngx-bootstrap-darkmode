@@ -1,9 +1,11 @@
 {
-  "name": "ngx-bootstrap-darkmode",
-  "version": "0.0.1",
+  "name": "@outerlimitstech/ngx-bootstrap-darkmode",
+  "description": "Angular wrapper for bootstrap-darkmode",
+  "version": "14.0.0-beta.1",
   "peerDependencies": {
-    "@angular/common": "^14.0.0",
-    "@angular/core": "^14.0.0"
+    "@angular/common": ">=14.0.0 <15.0.0",
+    "@angular/core": ">=14.0.0 <15.0.0",
+    "@angular/forms": ">=14.0.0 <15.0.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"

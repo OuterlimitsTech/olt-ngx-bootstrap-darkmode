@@ -1,12 +1,13 @@
 {
-  "name": "ngx-bootstrap-darkmode",
+  "name": "olt-ngx-bootstrap-darkmode",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "build": "ng build ngx-bootstrap-darkmode",
+    "watch": "ng build ngx-bootstrap-darkmode --watch --configuration development",
+    "test": "ng test",
+    "postbuild": "xcopy \"README.md\" \".\\dist\\ngx-bootstrap-darkmode\" \/Y"
   },
   "private": true,
   "dependencies": {
